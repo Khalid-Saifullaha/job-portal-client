@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import AuthContext from "../../context/AuthContext/AuthContext";
 import logo from "../../assets/logo.png";
 
@@ -19,11 +19,9 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <a>Item 1</a>
-      </li>
-
-      <li>
-        <a>Item 3</a>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/"></NavLink>
+        <NavLink to="/"></NavLink>
       </li>
     </>
   );
