@@ -23,9 +23,9 @@ const Banner = () => {
 
         <div className="flex-1">
           <motion.h1
-            animate={{ x: 50 }}
+            animate={{ x: [0, 50, 0] }}
             transition={{
-              duration: 2,
+              duration: 10,
 
               ease: easeOut,
               repeat: Infinity,
