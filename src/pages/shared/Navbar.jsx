@@ -20,8 +20,12 @@ const Navbar = () => {
     <>
       <li>
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/"></NavLink>
-        <NavLink to="/"></NavLink>
+      </li>
+      <li>
+        <NavLink to="/">Home</NavLink>
+      </li>
+      <li>
+        <NavLink to="/">Home</NavLink>
       </li>
     </>
   );
