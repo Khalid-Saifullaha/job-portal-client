@@ -1,9 +1,11 @@
 import React from "react";
 import Swal from "sweetalert2";
 import useAuth from "../../hooks/useAuth";
+import { useNavigate } from "react-router-dom";
 
 const AddJob = () => {
   const { user } = useAuth();
+  const navigate = useNavigate();
 
   const handleAddJob = (e) => {
     e.preventDefault();
@@ -35,7 +37,7 @@ const AddJob = () => {
             showConfirmButton: false,
             timer: 1500,
           });
-          // navigate("/myApplications");
+          navigate("/myPostedJobs");
         }
       });
   };
@@ -246,7 +248,7 @@ const AddJob = () => {
           </label>
           <input
             type="text"
-            name="company_log"
+            name="company_logo"
             placeholder="Company Logo URL"
             className="input input-bordered"
             required
