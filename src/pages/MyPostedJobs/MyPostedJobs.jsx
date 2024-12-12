@@ -23,6 +23,7 @@ const MyPostedJobs = () => {
               <th></th>
               <th>Job Title</th>
               <th>Deadline</th>
+              <th>Application Count</th>
               <th>Deadline</th>
             </tr>
           </thead>
@@ -32,7 +33,7 @@ const MyPostedJobs = () => {
                 <th>{index + 1}</th>
                 <td>{job.title}</td>
                 <td>{job.applicationDeadline}</td>
-                <td>Blue</td>
+                <td>{job.applicationCount}</td>
               </tr>
             ))}
           </tbody>
